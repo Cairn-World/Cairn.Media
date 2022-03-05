@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="addImages()">
+        <div id="images"></div>
+        <script>
+            function addImages() {
+                array = [];
+                for (let i = 1; i < 81; i++) {
+                    randomNumber = Math.floor(Math.random() * 80) + 1;
+                    if (array.includes(randomNumber)) {
+                        i = i - 1;
+                    } else {
+                        array.push(randomNumber);
+                        document.getElementById("images").innerHTML += 
+                            '<div class="imageFrame" style="background: url(Images/' + randomNumber + '.jpg); background-size: cover; background-position: center;"></div>';
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

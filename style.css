@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.imageFrame {
+    width: 10%;
+    height: 25%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
